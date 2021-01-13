@@ -1,0 +1,39 @@
+title: Foundation OCI
+schemaVersion: 1.1.0
+version: "202008"
+groupings:
+  - title: "Foundation"
+    variables:
+      - ${region}
+      - ${tenancy_ocid}
+      - ${ambientes}
+      - ${proyectos}
+      - ${tags}
+variables:
+  tenancy_ocid:
+    type: oci:identity:tenancy:id
+    title: Tenancy
+    required: true
+  region:
+    type: oci:identity:region:name
+    default: sa-santiago-1
+    title: Region
+    required: true
+
+  ambientes:
+    type: string
+    default: 'dev,qa'
+    required: true
+    title: Lista de Ambientes No Productivos
+
+  proyectos:
+    type: string
+    default: 'proy1,proy2'
+    required: false
+    title: Lista de Proyectos
+
+  tags:
+    type: string
+    default: 'creador,centro_costo'
+    required: false
+    title: Lista de tags adicionales a ambiente y proyecto
