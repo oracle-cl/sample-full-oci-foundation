@@ -2,10 +2,12 @@ title: Foundation OCI
 schemaVersion: 1.1.0
 version: "202008"
 groupings:
-  - title: "Foundation"
+  - title: "Tenancy"
     variables:
       - ${region}
       - ${tenancy_ocid}
+  - title: "Foundation"
+    variables:
       - ${ambientes}
       - ${proyectos}
       - ${tags}
