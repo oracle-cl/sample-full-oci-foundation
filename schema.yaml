@@ -1,4 +1,6 @@
 title: Foundation OCI
+description: Crea esquema de compartments, tags y grupos de usuarios y privilegios
+informationalText: Ejemplo Terraform
 schemaVersion: 1.1.0
 version: "202008"
 groupings:
